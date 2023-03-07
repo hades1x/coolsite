@@ -1,0 +1,15 @@
+body {
+  font-family: 'MinecraftiaRegular';
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
+  background-color: bisque;
+  color: black;
+  font-size: 20px;
+  
+}
+
+.profile-photo {
+  border-radius: 100%;
+  width: 120px;
+}
