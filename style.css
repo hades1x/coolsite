@@ -1,9 +1,9 @@
 body {
+  color: black;
+  font-size: 20px;
   font-family: 'MinecraftiaRegular';
   font-weight: normal;
   font-style: normal;
   text-align: center;
-  background-color: rgb(0, 0, 0);
-  color: #A800FF;
-  font-size: 20px;
+  background-color:bisque
 }
