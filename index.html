@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body {
+	background: #222;
+	margin: 0rem;
+	min-height: 100vh;
+	font-family: Futura, sans-serif;
+    text-align: center;
+    overflow: hidden;
+    color: #fff;
+    font-size: 20px;
+}
+#canvas, #text {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+#text {
+  min-height: 100vh;
+  width: 100vw;
+  z-index: 1;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 8vmin;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#text h1 {
+	opacity: 0.9
+}
+
+
+.text-divider {
+  --text-divider-gap: 1rem;
+  display: flex;
+  align-items:center;
+  font-size: 0.9375rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.text-divider::before, .text-divider::after {
+  content: '';
+  height: 1px;
+  background-color: silver;
+  flex-grow: 1;
+}
+
+.text-divider::before {
+  margin-right: var(--text-divider-gap);
+}
+
+.text-divider::after {
+  margin-left: var(--text-divider-gap);
+}
+
+/* demo stuff */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  padding: 2rem;
+}
+
+a:link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+a:active {
+  text-decoration: underline;
+  color: #ffffff;
+}
+    </style>
+</head>
+<body>
+<br>
+<br>
+<h1>kenopsia.xyz</h1>
+<nav>
+<a href="https://www.roblox.com/users/1528783616/profile">roblox</a> / <a href="https://steamcommunity.com/id/sillybilly55/">steam</a>
+</nav>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<canvas id="canvas"></canvas>
+<script src="star.js"></script>
+<script src="title.js"></script>
+</div>
+</body>
+</html>
