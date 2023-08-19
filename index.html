@@ -79,7 +79,20 @@
       <h1 style="text-align:center; font-size: 50px;">@c9nn
          <span class="small">(con)</span>
       </h1>
-
+      <audio id="audio" loop autoplay>
+         <source src="./bladee - Decay.mp3" type="audio/mpeg">
+         Your browser does not support the audio element.
+      </audio>
+      <input id="volumeSlider" type="range" min="0" max="1" step="0.01" value="1">
+   
+      <script>
+         const audio = document.getElementById("audio");
+         const volumeSlider = document.getElementById("volumeSlider");
+   
+         volumeSlider.addEventListener("input", () => {
+            audio.volume = volumeSlider.value;
+         });
+      </script>
       <p style="text-align:center; font-size: 20px;">kenopsia.xyz</p>
       <h4 style="text-align:center; font-size: 20px;">a project by con</h4>
       <div class="buttons">
