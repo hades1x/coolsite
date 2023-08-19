@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta property="og:type" content="website">
+   <meta property="og:url" content="https://kenopsia.xyz">
+   <meta property="og:title" content="kenopsia.xyz">
+   <meta property="og:description" content="blehh">
+   <title>kenopsia</title>
+   <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;700&family=Noto+Sans+Mono&display=swap');
+      body {
+         font-family: 'Noto Sans Mono', monospace;
+         margin: 0;
+         padding: 0;
+         overflow: hidden; /* Hide scrollbars */
+         color: rgb(0, 0, 0);
+      }
+
+      /* Video Background */
+      .video-background {
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         z-index: -1; /* Place the video behind other content */
+      }
+
+      video {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+
+      /* Main Content */
+      main {
+         position: relative;
+         text-align: center;
+         padding-top: 100px; /* Adjust as needed */
+         z-index: 1; /* Place content above the video */
+      }
+
+      /* Rest of your styles */
+      .buttons {
+         text-align: center;
+         margin-top: 20px;
+      }
+
+      .logo-link {
+         display: inline-block;
+         margin: 0 10px;
+      }
+
+      .logo {
+         width: 40px; /* Adjust the logo size as needed */
+         height: 40px; /* Adjust the logo size as needed */
+         display: block;
+      }
+
+      /* Music Controls */
+      #volumeSlider {
+         width: 100%;
+         max-width: 200px;
+      }
+   </style>
+</head>
+<body>
+   <!-- Video Background -->
+   <div class="video-background">
+      <video autoplay muted loop>
+         <source src="./y2mate.is - bladee - Decay-k2PUV3KwIgY-720p-1692449903.mp4" type="video/mp4">
+         Your browser does not support the video tag.
+      </video>
+   </div>
+   
+   <main>
+      <h1 style="text-align:center; font-size: 50px;">@c9nn
+         <span class="small">(con)</span>
+      </h1>
+      <audio id="audio" loop autoplay>
+         <source src="./bladee - Decay.mp3" type="audio/mpeg">
+         Your browser does not support the audio element.
+      </audio>
+      <input id="volumeSlider" type="range" min="0" max="1" step="0.01" value="1">
+   
+      <script>
+         const audio = document.getElementById("audio");
+         const volumeSlider = document.getElementById("volumeSlider");
+   
+         volumeSlider.addEventListener("input", () => {
+            audio.volume = volumeSlider.value;
+         });
+      </script>
+      <p style="text-align:center; font-size: 20px;">kenopsia.xyz</p>
+      <h4 style="text-align:center; font-size: 20px;">a project by con</h4>
+      <div class="buttons">
+         <a href="https://steamcommunity.com/id/c9nn/" class="logo-link">
+            <img src="https://cdn.freebiesupply.com/images/large/2x/steam-logo-black-transparent.png" alt="Steam Logo" class="logo">
+         </a>
+         <a href="https://www.roblox.com/users/1528783616/profile" class="logo-link">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Roblox_player_icon_black.svg/480px-Roblox_player_icon_black.svg.png" alt="Roblox Logo" class="logo">
+         </a>
+      </div>
+   </main>
+</body>
+</html>
