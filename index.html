@@ -1,108 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta property="og:type" content="website">
-   <meta property="og:url" content="https://kenopsia.xyz">
-   <meta property="og:title" content="kenopsia.xyz">
-   <meta property="og:description" content="blehh">
-   <title>kenopsia</title>
-   <style>
-      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;700&family=Noto+Sans+Mono&display=swap');
-      body {
-         font-family: 'Noto Sans Mono', monospace;
-         margin: 0;
-         padding: 0;
-         overflow: hidden; /* Hide scrollbars */
-         color: rgb(0, 0, 0);
-      }
+<!-- saved from url=(0021)https://kenopsia.xyz/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>co</title>
+    <style>
 
-      /* Video Background */
-      .video-background {
-         position: fixed;
-         top: 0;
-         left: 0;
-         width: 100%;
-         height: 100%;
-         z-index: -1; /* Place the video behind other content */
-      }
+        body {
+	background: #222;
+	margin: 0rem;
+	min-height: 100vh;
+	font-family: Futura, sans-serif;
+    text-align: center;
+    overflow: hidden;
+    color: #fff;
+    font-size: 20px;
+}
+#canvas, #text {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+#text {
+  min-height: 100vh;
+  width: 100vw;
+  z-index: 1;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 8vmin;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#text h1 {
+	opacity: 0.9
+}
 
-      video {
-         width: 100%;
-         height: 100%;
-         object-fit: cover;
-      }
 
-      /* Main Content */
-      main {
-         position: relative;
-         text-align: center;
-         padding-top: 100px; /* Adjust as needed */
-         z-index: 1; /* Place content above the video */
-      }
+.text-divider {
+  --text-divider-gap: 1rem;
+  display: flex;
+  align-items:center;
+  font-size: 0.9375rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
 
-      /* Rest of your styles */
-      .buttons {
-         text-align: center;
-         margin-top: 20px;
-      }
+.text-divider::before, .text-divider::after {
+  content: '';
+  height: 1px;
+  background-color: silver;
+  flex-grow: 1;
+}
 
-      .logo-link {
-         display: inline-block;
-         margin: 0 10px;
-      }
+.text-divider::before {
+  margin-right: var(--text-divider-gap);
+}
 
-      .logo {
-         width: 40px; /* Adjust the logo size as needed */
-         height: 40px; /* Adjust the logo size as needed */
-         display: block;
-      }
+.text-divider::after {
+  margin-left: var(--text-divider-gap);
+}
 
-      /* Music Controls */
-      #volumeSlider {
-         width: 100%;
-         max-width: 200px;
-      }
-   </style>
-</head>
+/* demo stuff */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  padding: 2rem;
+}
+
+a:link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+a:active {
+  text-decoration: underline;
+  color: #ffffff;
+}
+    </style>
+<style type="text/css" id="operaUserStyle"></style></head>
 <body>
-   <!-- Video Background -->
-   <div class="video-background">
-      <video autoplay muted loop>
-         <source src="./y2mate.is - bladee - Decay-k2PUV3KwIgY-720p-1692449903.mp4" type="video/mp4">
-         Your browser does not support the video tag.
-      </video>
-   </div>
-   
-   <main>
-      <h1 style="text-align:center; font-size: 50px;">@c9nn
-         <span class="small">(con)</span>
-      </h1>
-      <audio id="audio" loop autoplay>
-         <source src="./bladee - Decay.mp3" type="audio/mpeg">
-         Your browser does not support the audio element.
-      </audio>
-      <input id="volumeSlider" type="range" min="0" max="1" step="0.01" value="1">
-   
-      <script>
-         const audio = document.getElementById("audio");
-         const volumeSlider = document.getElementById("volumeSlider");
-   
-         volumeSlider.addEventListener("input", () => {
-            audio.volume = volumeSlider.value;
-         });
-      </script>
-      <p style="text-align:center; font-size: 20px;">kenopsia.xyz</p>
-      <h4 style="text-align:center; font-size: 20px;">a project by con</h4>
-      <div class="buttons">
-         <a href="https://steamcommunity.com/id/c9nn/" class="logo-link">
-            <img src="https://cdn.freebiesupply.com/images/large/2x/steam-logo-black-transparent.png" alt="Steam Logo" class="logo">
-         </a>
-         <a href="https://www.roblox.com/users/1528783616/profile" class="logo-link">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Roblox_player_icon_black.svg/480px-Roblox_player_icon_black.svg.png" alt="Roblox Logo" class="logo">
-         </a>
-      </div>
-   </main>
-</body>
-</html>
+<br>
+<br>
+<h1>kenopsia.xyz</h1>
+<nav>
+<a href="https://www.roblox.com/users/1528783616/profile">roblox</a> / <a href="https://www.last.fm/user/im_gone">lastfm</a> / <a href="https://steamcommunity.com/id/1con00/">steam</a>
+</nav>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<canvas id="canvas" width="1879" height="939"></canvas>
+<script src="./co_files/star.js.download"></script>
+<script src="./co_files/title.js.download"></script>
+
+
+
+</body></html>
